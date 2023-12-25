@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- BÀI_1 -->
+    <!-- <script>
+        var name = +prompt("Nhập vào ngày sinh của mình:")
+
+        if (name % 2 == 0) {
+            alert("Số chẵn")
+        }else{
+            alert(name + " là số lẻ")
+        }
+    </script> -->
+
+    <!-- BÀI_2 -->
+    <!-- <script>
+        var name = +prompt("Nhập vào ngày sinh của mình:")
+
+        if (name % 2 == 0) {
+            document.write(name + " Là số chẵn. ")
+            for (var a = 0; a <= name; a++) {
+                if (a % 2 == 0) {
+                    document.write(a);
+                }
+            }
+        }
+        else{
+            document.write(name + " Là số lẻ. ")
+            for (var a = 0; a <= name; a++) {
+                if (a % 2 != 0) {
+                    document.write(a);
+                }
+            }
+        }
+    </script> -->
+
+
+    <!-- BÀI_3 -->
+    <script>
+        var number = +prompt("NHập vào mã sinh viên: ")
+        var huy = true;
+        // Số nguyên tố > 1
+        if (number < 2) {
+            huy = false;
+            document.write(number + " không là số nguyên tố")
+        }
+        // Số lớn > 1
+        else {
+            for (var i = 2; i <= number - 1; i++) {
+                if (number % i == 0) { //nếu số đó chia hết cho 2 thì sai. kết thúc!
+                    huy = false;
+                    document.write(number + " không là số nguyên tố")
+                    break;
+                }
+            }
+        }
+        if (huy == true) {
+            document.write(number + " là số nguyên tố")
+        }
+    </script>
+</body>
+
+</html>
